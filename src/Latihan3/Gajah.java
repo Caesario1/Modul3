@@ -11,7 +11,7 @@ package Latihan3;
  */
 public class Gajah extends Hewan{
     public static void testClassMethod() {
-        System.out.println("The Class Method in Hewan ... ");
+        System.out.println("The Class Method in hewan ... ");
     }
 
     //meng-override method pada class Animal
@@ -23,7 +23,9 @@ public class Gajah extends Hewan{
         Gajah myGajah = new Gajah();
         Hewan myHewan = myGajah;
         Hewan.testClassMethod();
+        Gajah.testClassMethod();
         myHewan.testInstanceMethod();
+        Hewan.testClassMethod();
     }
     
 }
